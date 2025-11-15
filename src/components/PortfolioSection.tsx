@@ -24,7 +24,7 @@ const PortfolioSection: React.FC = () => {
                 </div>
               </div>
               <p className="text-gray-400 mb-6">
-                Desarrollamos una aplicación web moderna y ligera para una radio local, permitiendo a los oyentes sintonizar la emisora en vivo desde cualquier dispositivo.
+                Desarrollamos una aplicación web moderna y ligera para una emisora de radio, permitiendo a los oyentes sintonizar la transmisión en vivo desde cualquier dispositivo.
               </p>
               <h4 className="font-semibold text-white mb-3">Características Principales:</h4>
               <ul className="space-y-2 mb-8 text-gray-400">

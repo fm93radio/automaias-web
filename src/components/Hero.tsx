@@ -8,10 +8,10 @@ const Hero: React.FC = () => {
 
       <div className="container mx-auto px-6 relative">
         <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-4 tracking-tight">
-          Lleva tu Negocio de Tacuarembó al Siguiente Nivel
+          Lleva tu Negocio al Siguiente Nivel
         </h1>
         <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-          Asesoría especializada en automatización, gestión de almacenes e inteligencia empresarial para PYMES locales.
+          Asesoría especializada en automatización, gestión de almacenes e inteligencia empresarial para Pequeñas y Medianas Empresas.
         </p>
         <a
           href="#contact"

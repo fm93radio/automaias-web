@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckIcon } from './icons';
+import { CheckIcon } from './icons.tsx';
 
 const WhyUsSection: React.FC = () => {
   const points = [

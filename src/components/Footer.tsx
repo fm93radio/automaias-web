@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         <p>Llámanos al +598 92 601 114</p>
         <div className="mt-4 pt-4 border-t border-slate-800">
             <p>&copy; {new Date().getFullYear()} Automaias. Todos los derechos reservados.</p>
-            <p className="mt-2 text-sm">Tecnología accesible para negocios locales.</p>
+            <p className="mt-2 text-sm">Tecnología accesible para tu negocio.</p>
         </div>
       </div>
     </footer>

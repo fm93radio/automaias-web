@@ -1,5 +1,5 @@
 import React from 'react';
-import { BoxIcon, DesktopComputerIcon, CogIcon, BrainCircuitIcon } from './icons';
+import { BoxIcon, DesktopComputerIcon, CogIcon, BrainCircuitIcon } from './icons.tsx';
 
 interface ServiceCardProps {
   icon: React.ReactNode;
