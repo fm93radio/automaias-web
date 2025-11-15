@@ -3,11 +3,11 @@ import { RadioIcon, CheckIcon, LogoIcon } from './icons';
 
 const PortfolioSection: React.FC = () => {
   return (
-    <section id="portfolio" className="py-20 bg-slate-900 scroll-mt-20">
+    <section id="portfolio" className="py-20 bg-slate-900">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white">Nuestros Proyectos Recientes</h2>
-          <p className="text-lg text-gray-400 mt-2">Ejemplos de nuestro trabajo.</p>
+          <p className="text-lg text-gray-400 mt-2">Casos de éxito que transforman negocios.</p>
         </div>
         <div className="max-w-3xl mx-auto">
           

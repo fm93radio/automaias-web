@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { CheckIcon } from './icons';
 
@@ -11,7 +10,7 @@ const WhyUsSection: React.FC = () => {
   ];
 
   return (
-    <section id="why-us" className="py-20 bg-slate-800 scroll-mt-20">
+    <section id="why-us" className="py-20 bg-slate-800">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white">¿Por Qué Elegirnos?</h2>

@@ -35,6 +35,8 @@ const Header: React.FC = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-gray-300 hover:text-orange-500 focus:outline-none"
             aria-label="Abrir menú"
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-menu"
           >
             <svg
               className="w-6 h-6"
@@ -54,7 +56,7 @@ const Header: React.FC = () => {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="md:hidden bg-slate-900">
+        <div className="md:hidden bg-slate-900" id="mobile-menu">
           <nav className="flex flex-col items-center py-4 space-y-4">
             {navLinks.map((link) => (
               <a

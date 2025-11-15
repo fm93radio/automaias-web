@@ -1,0 +1,63 @@
+import React from 'react';
+import { TerminalIcon, BrainCircuitIcon, CogIcon, ChatBubbleIcon } from './icons';
+
+interface SkillCardProps {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}
+
+const SkillCard: React.FC<SkillCardProps> = ({ icon, title, description }) => {
+  return (
+    <div className="bg-slate-800 rounded-lg p-6 flex flex-col items-start border border-slate-700 hover:border-orange-500/50 hover:bg-slate-700/50 transition-all duration-300 transform hover:-translate-y-1 h-full">
+      <div className="bg-slate-900 p-3 rounded-md mb-4 text-orange-500">
+        {icon}
+      </div>
+      <h3 className="text-xl font-bold mb-2 text-white">{title}</h3>
+      <p className="text-gray-400">{description}</p>
+    </div>
+  );
+};
+
+const SkillsSection: React.FC = () => {
+  const skills = [
+    {
+      icon: <TerminalIcon />,
+      title: 'Prompt Engineering',
+      description: 'Diseño y optimización de instrucciones para modelos de IA, garantizando respuestas precisas y creativas para cada necesidad.'
+    },
+    {
+      icon: <BrainCircuitIcon />,
+      title: 'Herramientas de IA',
+      description: 'Dominio de un amplio espectro de herramientas de IA para análisis de datos, generación de contenido y optimización de tareas.'
+    },
+    {
+      icon: <ChatBubbleIcon />,
+      title: 'Creación de Chatbots',
+      description: 'Desarrollo de asistentes virtuales inteligentes para automatizar la atención al cliente, captar leads y mejorar la interacción.'
+    },
+    {
+      icon: <CogIcon />,
+      title: 'Automatización de Procesos',
+      description: 'Implementación de soluciones para automatizar flujos de trabajo repetitivos, liberando tiempo valioso y reduciendo el margen de error.'
+    }
+  ];
+
+  return (
+    <section id="skills" className="py-20 bg-slate-900/70">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-white">Nuestras Habilidades Clave</h2>
+          <p className="text-lg text-gray-400 mt-2">Tecnologías que aplicamos para potenciar tu negocio.</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {skills.map((skill, index) => (
+            <SkillCard key={index} {...skill} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default SkillsSection;
